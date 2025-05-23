@@ -92,32 +92,5 @@ ROBOBO 시스템은 여러 하드웨어 및 소프트웨어 모듈이 유기적�
     *   **AI 기반 명령 경로:** PC (제스처) → MQTT → 글러브 (모드 변경) → WiFi AP → 로봇 팔. 또는 HuskyLens → 로봇 팔 (자율 동작).
     *   **데이터 로깅 경로:** 글러브 → BLE → Raspberry Pi → AWS IoT Core → (잠재적) RDS (웹앱 경유).
 
-## 시연 (Demo) / 관련 링크 (Related Links)
-
-*   **(여기에 프로젝트 시연 영상 링크나 관련 자료 링크를 추가할 수 있습니다.)**
-    *   예: YouTube 데모 영상, 프로젝트 발표 자료, 관련 기술 블로그 포스트 등
-
-## 설정 및 설치 (Setup and Installation)
-
-이 프로젝트를 구성하고 실행하기 위한 주요 단계는 다음과 같습니다. (상세 내용은 각 컴포넌트의 소스 디렉토리 내 README 또는 주석 참조)
-
-*   **하드웨어 조립:** 로봇 팔과 로봇 글러브를 물리적으로 조립하고, 센서 및 액추에이터를 Arduino에 연결합니다.
-*   **Arduino 펌웨어:**
-    *   Arduino IDE를 사용하여 각 보드(로봇 팔, 로봇 글러브)에 맞는 펌웨어(.ino 스케치)를 업로드합니다.
-    *   필요한 Arduino 라이브러리 ( `WiFiNINA`, `Servo`, `Adafruit_PWMServoDriver`, `ArduinoBLE`, `PubSubClient`, `HUSKYLENS` 등)를 IDE를 통해 설치합니다.
-*   **Raspberry Pi 설정:**
-    *   Raspberry Pi OS를 설치하고 네트워크에 연결합니다.
-    *   Mosquitto MQTT 브로커를 설치 및 활성화합니다 (`sudo apt install mosquitto mosquitto-clients`).
-    *   Python 3 환경을 구성하고 필요한 라이브러리(`AWSIoTPythonSDK`, `bluepy`)를 설치합니다.
-    *   AWS IoT Core 접속을 위한 인증서 및 설정 파일을 `main_server.py` 스크립트가 참조할 수 있도록 배치합니다.
-*   **PC 설정 (손 제스처 인식):**
-    *   Python 3 환경을 구성하고 `opencv-python`, `mediapipe` 라이브러리를 설치합니다.
-    *   웹캠을 연결하고, `HandDetection.py` 스크립트 내 MQTT 브로커 주소를 확인합니다. (PC에도 `mosquitto-clients` 설치 권장)
-*   **Spring Boot 웹 애플리케이션 (`rbb_springboot`):**
-    *   JDK (Java 8 또는 11+) 및 Gradle 환경을 준비합니다. (프로젝트 내 `gradlew` 사용 가능)
-    *   `src/main/resources/application.properties` 파일에 AWS RDS (MySQL) 데이터베이스 연결 정보 및 OAuth2 클라이언트 ID/Secret을 설정합니다.
-    *   Gradle을 사용하여 빌드 (`./gradlew build`) 후 실행합니다 (`java -jar build/libs/your-app-name.jar`).
-*   **AWS 서비스 설정:**
-    *   AWS 계정 내에 IoT Core 사물(Thing) 및 관련 정책/인증서를 생성합니다.
-    *   MySQL 호환 RDS 인스턴스를 생성하고 `rbb_springboot` 애플리케이션에서 접근 가능하도록 보안 그룹 등을 설정합니다.
-
+## 시연
+**Live URL**: [https://youtu.be/Ff_h7KvUzM8](https://youtu.be/Ff_h7KvUzM8)
