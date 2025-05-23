@@ -8,8 +8,8 @@ ROBOBO는 ICT 멘토링 엑스포 2021 한이음 공모전 출품작(장려상 �
     <td style="text-align: center;">ROBOBO 어깨</td>
   </tr>
   <tr>
-    <td><img src="data/ROBOBO_arm.png" alt="ROBOBO 손" width="350"/></td>
-    <td><img src="data/ROBOBO_shoulder.png" alt="ROBOBO 어깨" width="350"/></td>
+    <td><img src="data/ROBOBO_arm.png" alt="ROBOBO 손" width="500"/></td>
+    <td><img src="data/ROBOBO_shoulder.png" alt="ROBOBO 어깨" width="500"/></td>
   </tr>
 </table>
 
