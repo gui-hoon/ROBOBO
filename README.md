@@ -2,6 +2,17 @@
 
 ROBOBO는 ICT 멘토링 엑스포 2021 한이음 공모전 출품작(장려상 수상)으로, 인공지능(AI) 및 다양한 센서를 활용하여 사용자의 움직임을 모방하고 자율적으로 동작할 수 있는 로봇 팔 시스템입니다. 이 프로젝트의 목표는 플렉스 센서가 장착된 글러브를 통해 사용자의 손 움직임을 로봇 팔로 실시간 전송하여 정밀하게 모방하고, 웹캠 및 AI 비전 센서를 이용한 제스처/객체 인식 기반의 다중 모드 제어 방식을 구현하는 것이었습니다. 또한, 클라우드 서비스(AWS) 및 웹 애플리케이션(Spring Boot)과의 연동을 통해 데이터 로깅, 사용자 관리, 그리고 향후 원격 제어 및 모니터링 기능 확장의 기반을 마련하고자 했습니다.
 
+<table>
+  <tr>
+    <td style="text-align: center;">ROBOBO 손</td>
+    <td style="text-align: center;">ROBOBO 어깨</td>
+  </tr>
+  <tr>
+    <td><img src="data/ROBOBO_arm.jpg" alt="ROBOBO 손" width="350"/></td>
+    <td><img src="data/ROBOBO_shoulder.jpg" alt="ROBOBO 어깨" width="350"/></td>
+  </tr>
+</table>
+
 ## 주요 기능 (Key Features)
 
 *   **실시간 로봇 팔 제어:** 플렉스 센서가 장착된 로봇 글러브를 사용하여 사용자의 손가락 움직임을 로봇 팔이 실시간으로 정밀하게 모방 (BLE 및 WiFi AP 모드 지원).
